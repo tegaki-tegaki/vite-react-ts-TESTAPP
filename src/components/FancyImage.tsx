@@ -25,10 +25,10 @@ export const FancyImage = ({ src }: Props) => {
   }, [imgLoaded]);
 
   return (
-    <div className="p-20 w-fit" style={{ backgroundColor: bgColor }}>
+    <div className="flex rounded-xl p-10 w-[200px] h-[200px]" style={{ backgroundColor: bgColor }}>
       <img
         src={src}
-        className="w-80"
+        className="flex-initial object-contain"
         onLoad={() => {
           setImgLoaded(true);
         }}
